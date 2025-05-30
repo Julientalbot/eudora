@@ -19,7 +19,7 @@ const Header: React.FC = () => {
 
   const navigation = [
     { name: 'Accueil', href: '/' },
-    { name: 'Créations', href: '/#creations' },
+    { name: 'Galerie', href: '/galerie' },
     { name: 'Sur Mesure', href: '/sur-mesure' },
     { name: 'À Propos', href: '/a-propos' },
     { name: 'Contact', href: '/contact' },

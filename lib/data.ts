@@ -19,94 +19,124 @@ export interface ShopInfo {
 export const categories: Category[] = [
   {
     id: '1',
-    name: 'Sacs Couture',
-    slug: 'sacs-couture',
-    description: 'Sacs de luxe alliant élégance et fonctionnalité pour accompagner vos sorties',
-    image: '/images/sac-langer.jpg'
+    name: 'Capes de Bain Prestige',
+    slug: 'capes-de-bain',
+    description: 'Douces et luxueuses, pour des moments câlins d\'exception',
+    image: '/images/categories/capes.jpg'
   },
   {
     id: '2',
-    name: 'Capes de Bain Prestige',
-    slug: 'capes-prestige',
-    description: 'Enveloppements luxueux en tissus nobles pour des moments de tendresse d\'exception',
-    image: '/images/cape-bain.jpg'
+    name: 'Lingettes & Bavoirs Couture',
+    slug: 'lingettes-bavoirs',
+    description: 'Ensembles coordonnés pour le quotidien de bébé',
+    image: '/images/categories/lingettes.jpg'
   },
   {
     id: '3',
-    name: 'Pochettes Raffinées',
-    slug: 'pochettes-raffinees',
-    description: 'Accessoires élégants pour organiser les essentiels avec sophistication',
-    image: '/images/trousse.jpg'
+    name: 'Anneaux de Dentition',
+    slug: 'anneaux-dentition',
+    description: 'Créations sensorielles et apaisantes',
+    image: '/images/categories/anneaux.jpg'
   },
   {
     id: '4',
-    name: 'Collection Soins Deluxe',
-    slug: 'soins-deluxe',
-    description: 'Lingettes lavables en fibres nobles pour une douceur inégalée',
-    image: '/images/lingettes.jpg'
+    name: 'Langes & Emmaillotage',
+    slug: 'langes',
+    description: 'Grands tissus polyvalents pour envelopper et protéger',
+    image: '/images/categories/langes.jpg'
   }
 ];
 
 export const featuredProducts: Product[] = [
   {
     id: '1',
-    name: 'Sac Couture Hibiscus',
-    description: 'Sac à langer de luxe en lin français brodé à la main, motifs d\'hibiscus délicatement ourlés',
-    price: 189,
-    category: 'Sacs à langer',
-    images: ['/images/sac-hibiscus.jpg'],
+    name: 'Cape de Bain Lions Gris',
+    description: 'Cape de bain en coton bio avec adorables motifs de lions sur fond crème, doublée éponge de bambou blanche',
+    price: 65,
+    category: 'Capes de Bain Prestige',
+    images: ['/images/products/cape-bain-motifs-lions-gris.jpg', '/images/products/cape-bain-motifs-lions-gris-accrochee.jpg'],
     customizable: true,
     inStock: true,
     isNew: true,
-    materials: ['Coton bio', 'Doublure imperméable'],
-    dimensions: '40 x 30 x 15 cm'
+    materials: ['Coton bio OEKO-TEX', 'Éponge de bambou'],
+    dimensions: '75 x 75 cm',
+    careInstructions: 'Lavage 30°C, séchage naturel recommandé'
   },
   {
     id: '2',
-    name: 'Cape de Bain Royale',
-    description: 'Cape en éponge de bambou premium avec capuche et broderie palmier dorée',
-    price: 95,
-    category: 'Capes de bain',
-    images: ['/images/cape-coco.jpg'],
+    name: 'Anneau de Dentition Lapin Savane',
+    description: 'Anneau de dentition en bois naturel avec oreilles de lapin en tissu motifs animaux tropicaux',
+    price: 28,
+    category: 'Anneaux de Dentition',
+    images: ['/images/products/anneau-dentition-lapin.jpg', '/images/products/anneau-dentition-motifs-savane-plantes.jpg'],
     customizable: true,
     inStock: true,
-    materials: ['Éponge de bambou'],
-    dimensions: '80 x 80 cm'
+    materials: ['Bois de hêtre naturel', 'Coton bio'],
+    dimensions: 'Anneau Ø 7 cm',
+    careInstructions: 'Lavage tissu 30°C, bois à nettoyer avec chiffon humide'
   },
   {
     id: '3',
-    name: 'Pochette Vanille Bourbon',
-    description: 'Pochette de toilette en soie sauvage teintée naturellement, finitions main',
-    price: 75,
-    category: 'Trousses',
-    images: ['/images/trousse-vanille.jpg'],
+    name: 'Ensemble Lingettes & Bavoir Canards',
+    description: 'Set de 6 lingettes lavables avec bavoir assorti, motifs canards sur fond vert tendre',
+    price: 42,
+    category: 'Lingettes & Bavoirs Couture',
+    images: ['/images/products/lingettes-bavoir-canards.jpg', '/images/products/bavoir-lingettes-rayures-vertes-confettis.jpg'],
     customizable: true,
-    inStock: true,
-    materials: ['Coton enduit'],
-    dimensions: '20 x 15 x 5 cm'
-  },
-  {
-    id: '4',
-    name: 'Collection Lingettes Prestige',
-    description: 'Coffret de 10 lingettes en coton biologique certifié avec étui en cuir végétal',
-    price: 85,
-    category: 'Lingettes lavables',
-    images: ['/images/lingettes-tropical.jpg'],
-    customizable: false,
     inStock: true,
     isNew: true,
     materials: ['Coton bio', 'Éponge de bambou'],
-    dimensions: '15 x 15 cm'
+    dimensions: 'Lingettes 15 x 15 cm, Bavoir 25 x 30 cm',
+    careInstructions: 'Lavage 40°C, séchage en machine autorisé'
+  },
+  {
+    id: '4',
+    name: 'Cape de Bain Rayures Vertes',
+    description: 'Cape de bain élégante à rayures vertes avec petits confettis colorés, finitions soignées',
+    price: 68,
+    category: 'Capes de Bain Prestige',
+    images: ['/images/products/cape-bain-rayures-vertes-confettis.jpg', '/images/products/detail-etiquette-rayures-vertes.jpg'],
+    customizable: true,
+    inStock: true,
+    materials: ['Coton bio OEKO-TEX', 'Éponge de bambou'],
+    dimensions: '80 x 80 cm',
+    careInstructions: 'Lavage 30°C, préserver les couleurs'
+  },
+  {
+    id: '5',
+    name: 'Lange d\'Emmaillotage Savane',
+    description: 'Grand lange en mousseline de coton avec motifs d\'animaux de la savane, idéal pour l\'emmaillotage',
+    price: 35,
+    category: 'Langes & Emmaillotage',
+    images: ['/images/products/lange-emmaillotage-motifs-savane.jpg', '/images/products/lingettes-lavables-motifs-savane.jpg'],
+    customizable: true,
+    inStock: true,
+    materials: ['Mousseline de coton bio'],
+    dimensions: '120 x 120 cm',
+    careInstructions: 'Lavage 40°C, s\'assouplit à chaque lavage'
+  },
+  {
+    id: '6',
+    name: 'Lange Motifs Botaniques',
+    description: 'Lange délicat avec motifs botaniques subtils, parfait pour les moments tendresse',
+    price: 38,
+    category: 'Langes & Emmaillotage',
+    images: ['/images/products/lange-motifs-botaniques-etiquette.jpg', '/images/products/lange-motifs-botaniques-plie.jpg'],
+    customizable: true,
+    inStock: true,
+    materials: ['Coton bio double gaze'],
+    dimensions: '110 x 110 cm',
+    careInstructions: 'Lavage délicat 30°C'
   }
 ];
 
 export const shopInfo: ShopInfo = {
   name: 'Eudora Couture',
   tagline: 'Créations haute couture pour bébés et mamans',
-  description: 'Chaque création est une œuvre unique, confectionnée avec une attention méticuleuse aux détails dans notre atelier d\'exception à Saint-Denis. Nous sélectionnons les tissus les plus nobles et les finitions les plus raffinées pour sublimer les moments précieux de votre famille.',
+  description: 'Chaque œuvre est confectionnée avec excellence dans notre atelier à Saint-Denis. Des tissus nobles choisis avec soin, des finitions d\'exception, pour sublimer les moments précieux de votre famille.',
   location: 'La Réunion',
-  shipping: 'Livraison offerte et personnalisée à La Réunion',
-  customOrder: 'Créations sur-mesure pour répondre à vos désirs les plus exclusifs',
+  shipping: 'Livraison gratuite à partir de 80€ à La Réunion',
+  customOrder: 'Toutes nos créations sont personnalisables selon vos inspirations les plus raffinées',
   owner: 'Marie',
   email: 'contact@eudoracouture.re',
   phone: '+262 692 12 34 56',
