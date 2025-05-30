@@ -1,5 +1,21 @@
 import { Product, Category } from '@/types/product';
 
+export interface ShopInfo {
+  name: string;
+  tagline: string;
+  description: string;
+  location: string;
+  shipping: string;
+  customOrder: string;
+  owner: string;
+  email: string;
+  phone: string;
+  social: {
+    instagram?: string;
+    facebook?: string;
+  };
+}
+
 export const categories: Category[] = [
   {
     id: '1',
@@ -84,11 +100,18 @@ export const featuredProducts: Product[] = [
   }
 ];
 
-export const shopInfo = {
+export const shopInfo: ShopInfo = {
   name: 'Ti Bébé Péi',
   tagline: 'Créations artisanales pour bébés et mamans, inspirées de La Réunion',
   description: 'Chaque création est confectionnée avec amour dans mon atelier à Saint-Denis. Des tissus choisis avec soin, des finitions soignées, pour accompagner les moments précieux de votre famille.',
   location: 'La Réunion',
   shipping: 'Livraison gratuite à partir de 80€ à La Réunion',
-  customOrder: 'Toutes nos créations sont personnalisables selon vos envies'
+  customOrder: 'Toutes nos créations sont personnalisables selon vos envies',
+  owner: 'Marie',
+  email: 'contact@tibebepei.re',
+  phone: '+262 692 12 34 56',
+  social: {
+    instagram: 'https://instagram.com/tibebepei',
+    facebook: 'https://facebook.com/tibebepei'
+  }
 };

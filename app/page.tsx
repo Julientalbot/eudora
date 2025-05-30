@@ -11,10 +11,8 @@ export default function Home() {
         title="Ti Bébé Péi"
         subtitle={shopInfo.tagline}
         description={shopInfo.description}
-        primaryCTA="Découvrir les créations"
-        primaryHref="#creations"
-        secondaryCTA="Commander sur mesure"
-        secondaryHref="/sur-mesure"
+        primaryCTA={{ label: "Découvrir les créations", href: "#creations" }}
+        secondaryCTA={{ label: "Commander sur mesure", href: "/sur-mesure" }}
       />
 
       {/* Categories Section */}

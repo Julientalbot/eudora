@@ -33,7 +33,8 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${inter.variable} ${playfair.variable} font-body antialiased bg-cream text-gray-800`}
+        className={`${inter.variable} ${playfair.variable} antialiased bg-cream text-gray-800`}
+        style={{ fontFamily: 'var(--font-inter)' }}
       >
         <Header />
         <main className="min-h-screen">
