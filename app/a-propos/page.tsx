@@ -45,19 +45,19 @@ export default function AProposPage() {
               </h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Bonjour, je suis {shopInfo.owner}, fondatrice d'Eudora Couture. Maman de cinq magnifiques enfants 
-                  - Louis, François, Antoine, Jeanne et Eléonore ma petite dernière - j'ai découvert ma passion 
-                  pour la couture lors de ma première grossesse.
+                  Bonjour, je suis {shopInfo.owner}, fondatrice d'Eudora Couture. Maman de Louis, mon petit prince né 
+                  le 1er juin 2023, j'ai découvert ma passion pour la couture lors de ma première grossesse. 
+                  Un parcours qui continue avec l'arrivée future de François, Antoine, Jeanne et Eléonore.
                 </p>
                 <p>
-                  Ce qui a commencé par quelques points d'aiguille pendant ma grossesse de Louis s'est enrichi 
-                  à chaque nouvelle grossesse. Avec François, Antoine, Jeanne et enfin Eléonore, ma technique 
-                  s'est affinée jusqu'à devenir une véritable activité à part entière.
+                  Ce qui a commencé par quelques points d'aiguille pendant ma grossesse de Louis en 2023 
+                  évolue progressivement. Chaque création m'apprend, chaque projet affine ma technique, 
+                  transformant peu à peu cette passion en véritable activité artisanale.
                 </p>
                 <p>
-                  Aujourd'hui, forte de cette expérience de maman créatrice, chaque pièce Eudora Couture 
-                  porte en elle l'amour maternel et l'excellence artisanale, méticuleusement façonnée 
-                  dans notre atelier à Trois Bassins pour sublimer vos moments les plus précieux.
+                  Aujourd'hui, depuis notre atelier à Trois Bassins, chaque pièce Eudora Couture porte 
+                  en elle l'amour maternel et l'excellence artisanale que j'enrichis au quotidien, 
+                  créant des trésors pour sublimer vos moments les plus précieux.
                 </p>
               </div>
             </div>
@@ -254,32 +254,32 @@ export default function AProposPage() {
               {
                 year: '2023',
                 title: 'Les premiers points avec Louis',
-                description: 'Découverte de la couture pendant ma première grossesse. Louis naît le 1er juin 2023, mes premières créations commencent.',
+                description: 'Grossesse de Louis et congé maternité : découverte de la couture. Louis naît le 1er juin 2023, mes premières créations pour lui démarrent une passion.',
                 icon: '🧵'
               },
               {
-                year: '2023-2024',
-                title: 'Évolution avec chaque enfant',
-                description: 'Avec l\'arrivée des autres enfants, ma technique s\'affine et ma créativité s\'enrichit à chaque nouvelle grossesse.',
-                icon: '👶'
-              },
-              {
                 year: '2024',
-                title: 'Naissance d\'Eudora Couture',
-                description: 'Création officielle de l\'atelier d\'artisanat de luxe et inauguration de l\'atelier d\'exception à Trois Bassins.',
-                icon: '🌺'
-              },
-              {
-                year: '2024',
-                title: 'Reconnaissance locale',
-                description: 'Reconnaissance par une clientèle prestigieuse et développement d\'une réputation d\'excellence sur l\'île.',
-                icon: '🏝️'
+                title: 'Lancement timide d\'Eudora Couture',
+                description: 'Création officielle mais discrète de l\'atelier artisanal à Trois Bassins. Premières commandes pour l\'entourage proche.',
+                icon: '🌱'
               },
               {
                 year: '2025',
                 title: 'Expansion digitale',
-                description: 'Lancement de notre boutique en ligne exclusive pour offrir l\'excellence d\'Eudora Couture au-delà de La Réunion.',
+                description: 'Lancement de notre boutique en ligne et présence digitale pour faire connaître Eudora Couture au-delà de notre cercle.',
                 icon: '✨'
+              },
+              {
+                year: '2025-2030',
+                title: 'Croissance avec François et Antoine',
+                description: 'Arrivée de François puis Antoine : chaque grossesse enrichit ma technique. Développement d\'une clientèle fidèle sur l\'île.',
+                icon: '👶'
+              },
+              {
+                year: '2030-2035',
+                title: 'Maturité artisanale avec Jeanne et Eléonore',
+                description: 'Avec Jeanne puis Eléonore, l\'atelier atteint sa maturité. Reconnaissance comme référence de l\'artisanat de luxe pour bébés à La Réunion.',
+                icon: '🏝️'
               }
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-8">

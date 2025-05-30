@@ -18,7 +18,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({
   title = "Créations Artisanales Tropicales",
   subtitle = "Bienvenue chez Eudora",
-  description = "L'histoire d'une maman de 5 enfants qui a transformé sa passion de la couture en atelier d'exception. De Louis à Eléonore, chaque grossesse a enrichi mon savoir-faire.",
+  description = "L'histoire commencée en 2023 avec Louis : de la découverte de la couture pendant ma grossesse à l'atelier artisanal d'aujourd'hui. Un parcours qui grandit avec chaque enfant à venir.",
   primaryCTA = { label: "Découvrir nos créations", href: "/creations" },
   secondaryCTA = { label: "Sur mesure", href: "/sur-mesure" },
 }) => {
