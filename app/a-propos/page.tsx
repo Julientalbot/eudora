@@ -66,7 +66,7 @@ export default function AProposPage() {
             <div className="relative fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="aspect-square bg-gradient-to-br from-coral/10 to-turquoise/10 rounded-3xl relative overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/placeholder.svg"
+                  src="/images/mathilde-atelier.jpg"
                   alt="Mathilde dans son atelier de couture à Trois Bassins, travaillant sur une création Eudora Couture"
                   width={600}
                   height={600}
@@ -179,7 +179,7 @@ export default function AProposPage() {
             <div className="relative fade-in">
               <div className="aspect-[4/3] bg-gradient-to-br from-turquoise/10 to-coral/10 rounded-3xl relative overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/placeholder.svg"
+                  src="/images/mathilde-atelier.jpg"
                   alt="L'atelier Eudora Couture à Trois Bassins - Machine à coudre Janome et créations en cours"
                   width={800}
                   height={600}
