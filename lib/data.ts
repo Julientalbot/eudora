@@ -110,7 +110,7 @@ export function getProductsByCategory(categorySlug: string): Product[] {
 
 export const shopInfo: ShopInfo = {
   name: 'Eudora Couture',
-  tagline: 'Créations haute couture pour bébés',
+  tagline: 'Artisanat de luxe pour bébés',
   description: 'Chaque œuvre est confectionnée avec excellence dans notre atelier à Saint-Denis. Des tissus nobles choisis avec soin, des finitions d\'exception, pour sublimer les moments précieux de votre famille.',
   location: 'La Réunion',
   shipping: 'Livraison gratuite à partir de 80€ à La Réunion',

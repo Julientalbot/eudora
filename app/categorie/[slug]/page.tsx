@@ -7,9 +7,9 @@ import { ArrowLeft, Grid } from 'lucide-react'
 import Image from 'next/image'
 
 interface CategoryPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 // Fonction pour récupérer une catégorie par slug
@@ -17,9 +17,10 @@ function getCategoryBySlug(slug: string) {
   return categories.find(category => category.slug === slug)
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const category = getCategoryBySlug(params.slug)
-  const products = getProductsByCategory(params.slug)
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { slug } = await params
+  const category = getCategoryBySlug(slug)
+  const products = getProductsByCategory(slug)
   
   if (!category) {
     notFound()
@@ -179,7 +180,8 @@ export default function CategoryPage({ params }: CategoryPageProps) {
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: CategoryPageProps) {
-  const category = getCategoryBySlug(params.slug)
+  const { slug } = await params
+  const category = getCategoryBySlug(slug)
   
   if (!category) {
     return {
@@ -190,7 +192,7 @@ export async function generateMetadata({ params }: CategoryPageProps) {
   return {
     title: `${category.name} | Eudora Couture`,
     description: category.description,
-    keywords: `${category.name}, haute couture, bébé, La Réunion, artisanal`,
+    keywords: `${category.name}, artisanat de luxe, bébé, La Réunion, artisanal`,
     openGraph: {
       title: `${category.name} - Eudora Couture`,
       description: category.description,

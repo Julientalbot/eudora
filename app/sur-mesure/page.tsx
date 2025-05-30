@@ -42,7 +42,7 @@ export default function SurMesurePage() {
               Créations <span className="gradient-text">Sur Mesure</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Confiez-nous vos rêves les plus exclusifs, nous les transformons en réalité haute couture. 
+              Confiez-nous vos rêves les plus exclusifs, nous les transformons en réalité artisanale de luxe. 
               Chaque détail est méticuleusement travaillé pour créer une pièce d'exception qui vous sublime.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function SurMesurePage() {
               Comment ça <span className="gradient-text">marche</span> ?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Un processus d'excellence personnalisé pour créer votre pièce haute couture
+              Un processus d'excellence personnalisé pour créer votre pièce artisanale de luxe
             </p>
           </div>
           
@@ -80,14 +80,14 @@ export default function SurMesurePage() {
               {
                 step: '2',
                 title: 'Consultation exclusive',
-                description: 'Recevez une proposition haute couture personnalisée',
+                description: 'Recevez une proposition artisanale personnalisée',
                 icon: '📋',
                 color: 'turquoise'
               },
               {
                 step: '3',
                 title: 'Confection d\'exception',
-                description: 'Réalisation méticuleuse dans notre atelier haute couture',
+                description: 'Réalisation avec soin dans notre atelier d\'artisanat de luxe',
                 icon: '✂️',
                 color: 'tropical-green'
               },

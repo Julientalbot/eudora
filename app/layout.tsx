@@ -15,9 +15,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Eudora Couture - Créations haute couture pour bébés",
-  description: "Créations haute couture d'exception à La Réunion : capes de bain premium, lingettes couture et accessoires haut de gamme pour bébés. Pièces uniques et sur-mesure.",
-  keywords: "haute couture, luxe, bébé, La Réunion, fait main, artisanat d'exception, cadeau naissance prestigieux, sur mesure, création exclusive",
+  title: "Eudora Couture - Artisanat de luxe pour bébés",
+  description: "Artisanat de luxe d'exception à La Réunion : capes de bain premium, lingettes artisanales et accessoires haut de gamme pour bébés. Pièces uniques et sur-mesure.",
+  keywords: "artisanat de luxe, bébé, La Réunion, fait main, artisanat d'exception, cadeau naissance prestigieux, sur mesure, création exclusive",
   authors: [{ name: "Mathilde - Eudora Couture" }],
   creator: "Eudora Couture",
   publisher: "Eudora Couture",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "Eudora Couture - Haute Couture pour bébés",
-    description: "Créations haute couture pour bébés d'exception à La Réunion",
+    description: "Artisanat de luxe pour bébés d'exception à La Réunion",
     locale: "fr_FR",
     siteName: "Eudora Couture",
   },
   twitter: {
     card: "summary_large_image",
     title: "Eudora Couture - Haute Couture",
-    description: "Créations haute couture pour bébés à La Réunion",
+    description: "Artisanat de luxe pour bébés à La Réunion",
   },
 };
 

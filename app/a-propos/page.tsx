@@ -125,7 +125,7 @@ export default function AProposPage() {
               {
                 icon: '🤝',
                 title: 'Service d\'Exception',
-                description: 'Notre atelier haute couture offre une expérience personnalisée exclusive, créant des pièces d\'héritage pour les générations futures.',
+                description: 'Notre atelier d\'artisanat de luxe offre une expérience personnalisée exclusive, créant des pièces d\'héritage pour les générations futures.',
                 color: 'coral'
               },
               {
@@ -192,7 +192,7 @@ export default function AProposPage() {
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
                   Notre atelier d'exception situé à Saint-Denis est le sanctuaire d'Eudora Couture. 
-                  C'est ici que prennent vie nos créations haute couture, dans un environnement 
+                  C'est ici que prennent vie nos créations artisanales de luxe, dans un environnement 
                   alliant tradition artisanale et excellence contemporaine.
                 </p>
                 <p>
@@ -203,7 +203,7 @@ export default function AProposPage() {
                 <p>
                   C'est également un espace d'exception où notre clientèle exclusive vient 
                   découvrir nos collections et concevoir leurs rêves. Car derrière chaque 
-                  création haute couture, il y a une histoire unique que nous sublimeons.
+                  création artisanale, il y a une histoire unique que nous sublimeons.
                 </p>
               </div>
               
@@ -250,7 +250,7 @@ export default function AProposPage() {
               {
                 year: '2022',
                 title: 'Naissance d\'Eudora Couture',
-                description: 'Création officielle de la maison de haute couture et inauguration de l\'atelier d\'exception à Saint-Denis.',
+                description: 'Création officielle de l\'atelier d\'artisanat de luxe et inauguration de l\'atelier d\'exception à Saint-Denis.',
                 icon: '🌺'
               },
               {

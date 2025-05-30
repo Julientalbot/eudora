@@ -40,11 +40,11 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-display font-bold gradient-text">Eudora Couture</h3>
-                <p className="text-xs text-gray-400 tracking-wider uppercase">Haute Couture</p>
+                <p className="text-xs text-gray-400 tracking-wider uppercase">Artisanat de Luxe</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Créations haute couture pour bébés d\'exception. 
+              Artisanat de luxe pour bébés d\'exception. 
               Chaque pièce est une œuvre unique, façonnée avec passion à La Réunion.
             </p>
             <div className="flex gap-4 pt-4">

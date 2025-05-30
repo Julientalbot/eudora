@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                 Eudora Couture
               </span>
               <span className="text-xs text-gray-500 tracking-wider uppercase">
-                Haute Couture
+                Artisanat de Luxe
               </span>
             </div>
           </Link>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Button from './Button'
 
 interface ProductCardProps {
@@ -46,9 +47,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <Link href={`/produit/${id}`}>
         <div className="aspect-square relative overflow-hidden bg-gradient-to-br from-sand to-cream">
           {imageUrl && imageUrl !== "/images/placeholder.svg" ? (
-            <img 
+            <Image 
               src={imageUrl} 
               alt={title}
+              width={400}
+              height={400}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
             />
           ) : (

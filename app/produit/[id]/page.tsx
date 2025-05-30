@@ -7,9 +7,9 @@ import { featuredProducts, getProductById } from '@/lib/data'
 import { ArrowLeft, Heart, ShoppingBag, Star } from 'lucide-react'
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 
@@ -21,14 +21,15 @@ function getAdjacentProducts(currentId: string) {
   return { prevProduct, nextProduct }
 }
 
-export default function ProductPage({ params }: ProductPageProps) {
-  const product = getProductById(params.id)
+export default async function ProductPage({ params }: ProductPageProps) {
+  const { id } = await params
+  const product = getProductById(id)
   
   if (!product) {
     notFound()
   }
 
-  const { prevProduct, nextProduct } = getAdjacentProducts(params.id)
+  const { prevProduct, nextProduct } = getAdjacentProducts(id)
 
   return (
     <div className="pt-20 min-h-screen bg-gradient-to-b from-cream to-sand">
@@ -226,7 +227,8 @@ export default function ProductPage({ params }: ProductPageProps) {
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: ProductPageProps) {
-  const product = getProductById(params.id)
+  const { id } = await params
+  const product = getProductById(id)
   
   if (!product) {
     return {
@@ -237,7 +239,7 @@ export async function generateMetadata({ params }: ProductPageProps) {
   return {
     title: `${product.name} - ${product.price}€ | Eudora Couture`,
     description: product.description,
-    keywords: `${product.name}, ${product.category}, haute couture, bébé, La Réunion, ${product.materials?.join(', ')}`,
+    keywords: `${product.name}, ${product.category}, artisanat de luxe, bébé, La Réunion, ${product.materials?.join(', ')}`,
     openGraph: {
       title: `${product.name} - Eudora Couture`,
       description: product.description,
