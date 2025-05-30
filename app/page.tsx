@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Hero from '@/components/Hero';
 import ProductCard from '@/components/ProductCard';
 import Button from '@/components/Button';
@@ -34,8 +35,9 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {categories.map((category, index) => (
-              <div
+              <Link
                 key={category.id}
+                href={`/categorie/${category.slug}`}
                 className="group cursor-pointer fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
@@ -63,7 +65,7 @@ export default function Home() {
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">{category.description}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

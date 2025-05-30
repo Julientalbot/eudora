@@ -86,7 +86,7 @@ export default function GaleriePage() {
                       <span className="text-2xl font-bold gradient-text">
                         {product.price}€
                       </span>
-                      <Button size="small" className="group/btn">
+                      <Button href={`/produit/${product.id}`} size="small" className="group/btn">
                         Voir détails
                         <span className="inline-block ml-1 transition-transform group-hover/btn:translate-x-1">
                           →

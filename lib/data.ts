@@ -130,6 +130,17 @@ export const featuredProducts: Product[] = [
   }
 ];
 
+// Utility functions
+export function getProductById(id: string): Product | undefined {
+  return featuredProducts.find(product => product.id === id);
+}
+
+export function getProductsByCategory(categorySlug: string): Product[] {
+  const category = categories.find(cat => cat.slug === categorySlug);
+  if (!category) return [];
+  return featuredProducts.filter(product => product.category === category.name);
+}
+
 export const shopInfo: ShopInfo = {
   name: 'Eudora Couture',
   tagline: 'Créations haute couture pour bébés et mamans',

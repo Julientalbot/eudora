@@ -43,7 +43,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       </div>
 
       {/* Image Container */}
-      <Link href={`/produits/${id}`}>
+      <Link href={`/produit/${id}`}>
         <div className="aspect-square relative overflow-hidden bg-gradient-to-br from-sand to-cream">
           {imageUrl && imageUrl !== "/images/placeholder.svg" ? (
             <img 
@@ -92,7 +92,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </p>
         )}
         
-        <Link href={`/produits/${id}`}>
+        <Link href={`/produit/${id}`}>
           <h3 className="text-xl font-display font-bold text-gray-900 mb-2 group-hover:text-coral transition-colors duration-300">
             {title}
           </h3>
@@ -112,7 +112,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </div>
           
           <Button
-            href={`/produits/${id}`}
+            href={`/produit/${id}`}
             variant="primary"
             size="small"
             disabled={isSoldOut}
