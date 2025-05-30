@@ -79,7 +79,7 @@ export default function ContactPage() {
               {
                 icon: <MapPin className="w-6 h-6" />,
                 title: 'Localisation',
-                info: 'Saint-Denis, La Réunion',
+                info: 'Trois Bassins, La Réunion',
                 link: '#',
                 color: 'tropical-green'
               },

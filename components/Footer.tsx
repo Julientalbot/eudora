@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-tropical-green mt-0.5" />
-                <span className="text-gray-300">Saint-Denis, La Réunion</span>
+                <span className="text-gray-300">Trois Bassins, La Réunion</span>
               </li>
             </ul>
           </div>
@@ -114,7 +114,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-xl font-display font-bold mb-6">Newsletter</h4>
             <p className="text-gray-300 mb-4">
-              Restez informé·e de nos nouveautés
+              Restez informé de nos nouveautés
             </p>
             <form className="space-y-3">
               <input
