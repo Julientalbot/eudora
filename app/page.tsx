@@ -49,10 +49,9 @@ export default function Home() {
                         <div className="w-32 h-32 bg-white/50 rounded-full blur-xl"></div>
                       </div>
                       <span className="text-6xl relative z-10 transform group-hover:scale-110 transition-transform duration-500">
-                        {category.id === '1' && '👜'}
-                        {category.id === '2' && '🛁'}
-                        {category.id === '3' && '👝'}
-                        {category.id === '4' && '🌿'}
+                        {category.id === '1' && '🛁'}
+                        {category.id === '2' && '🌿'}
+                        {category.id === '3' && '👶'}
                       </span>
                     </div>
                   </div>

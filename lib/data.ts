@@ -37,13 +37,6 @@ export const categories: Category[] = [
     slug: 'anneaux-dentition',
     description: 'Créations sensorielles et apaisantes',
     image: '/images/categories/anneaux.jpg'
-  },
-  {
-    id: '4',
-    name: 'Langes & Emmaillotage',
-    slug: 'langes',
-    description: 'Grands tissus polyvalents pour envelopper et protéger',
-    image: '/images/categories/langes.jpg'
   }
 ];
 
@@ -101,32 +94,6 @@ export const featuredProducts: Product[] = [
     materials: ['Coton bio OEKO-TEX', 'Éponge de bambou'],
     dimensions: '80 x 80 cm',
     careInstructions: 'Lavage 30°C, préserver les couleurs'
-  },
-  {
-    id: '5',
-    name: 'Lange d\'Emmaillotage Savane',
-    description: 'Grand lange en mousseline de coton avec motifs d\'animaux de la savane, idéal pour l\'emmaillotage',
-    price: 35,
-    category: 'Langes & Emmaillotage',
-    images: ['/images/products/lange-emmaillotage-motifs-savane.jpg', '/images/products/lingettes-lavables-motifs-savane.jpg'],
-    customizable: true,
-    inStock: true,
-    materials: ['Mousseline de coton bio'],
-    dimensions: '120 x 120 cm',
-    careInstructions: 'Lavage 40°C, s\'assouplit à chaque lavage'
-  },
-  {
-    id: '6',
-    name: 'Lange Motifs Botaniques',
-    description: 'Lange délicat avec motifs botaniques subtils, parfait pour les moments tendresse',
-    price: 38,
-    category: 'Langes & Emmaillotage',
-    images: ['/images/products/lange-motifs-botaniques-etiquette.jpg', '/images/products/lange-motifs-botaniques-plie.jpg'],
-    customizable: true,
-    inStock: true,
-    materials: ['Coton bio double gaze'],
-    dimensions: '110 x 110 cm',
-    careInstructions: 'Lavage délicat 30°C'
   }
 ];
 
