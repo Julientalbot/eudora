@@ -41,8 +41,12 @@ export const metadata: Metadata = {
     title: "Ti Bébé Péi - Créations artisanales",
     description: "Créations artisanales pour bébés et mamans à La Réunion",
   },
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#FF6B6B",
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#FF6B6B',
 };
 
 export default function RootLayout({
