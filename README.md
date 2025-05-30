@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eudora - Next.js Project
 
-## Getting Started
+Un projet Next.js moderne avec TypeScript, Tailwind CSS et Turbopack.
 
-First, run the development server:
+## 🚀 Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15** - Framework React avec App Router
+- **TypeScript** - Typage statique
+- **Tailwind CSS** - Framework CSS utility-first
+- **Turbopack** - Bundler ultra-rapide pour le développement
+- **ESLint** - Linting du code
+
+## 📁 Structure du projet
+
+```
+eudora/
+├── app/              # Routes et pages (App Router)
+├── components/       # Composants réutilisables
+├── lib/             # Fonctions utilitaires
+├── types/           # Types TypeScript
+├── hooks/           # Custom React hooks
+├── public/          # Assets statiques
+│   └── images/      # Images
+└── vercel.json      # Configuration Vercel
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Cloner le repository
+git clone [URL_DU_REPO]
+cd eudora
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Installer les dépendances
+npm install
 
-## Learn More
+# Copier les variables d'environnement
+cp .env.example .env.local
 
-To learn more about Next.js, take a look at the following resources:
+# Lancer le serveur de développement
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ouvrir [http://localhost:3000](http://localhost:3000) pour voir le résultat.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Scripts disponibles
 
-## Deploy on Vercel
+- `npm run dev` - Démarre le serveur de développement avec Turbopack
+- `npm run build` - Build l'application pour la production
+- `npm run start` - Démarre le serveur de production
+- `npm run lint` - Lance ESLint sur le code
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Déploiement sur Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Pusher le code sur GitHub
+2. Connecter le repo à [Vercel](https://vercel.com)
+3. Configurer les variables d'environnement
+4. Déployer !
+
+## 📚 Documentation
+
+- [Documentation Next.js](https://nextjs.org/docs)
+- [Documentation Tailwind CSS](https://tailwindcss.com/docs)
+- [Documentation TypeScript](https://www.typescriptlang.org/docs/)
