@@ -1,6 +1,6 @@
-# Eudora - Next.js Project
+# Ti Bébé Péi - Eudora
 
-Un projet Next.js moderne avec TypeScript, Tailwind CSS et Turbopack.
+Un site e-commerce moderne pour créations artisanales avec Next.js, TypeScript et Tailwind CSS.
 
 ## 🚀 Technologies
 
