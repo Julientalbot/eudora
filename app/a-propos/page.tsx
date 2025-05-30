@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Button from '@/components/Button'
 import { shopInfo } from '@/lib/data'
 
@@ -61,15 +62,26 @@ export default function AProposPage() {
               </div>
             </div>
             
-            {/* Image placeholder */}
+            {/* Photo de Mathilde dans son atelier */}
             <div className="relative fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="aspect-square bg-gradient-to-br from-coral/10 to-turquoise/10 rounded-3xl relative overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-40 h-40 mx-auto bg-white/80 rounded-full flex items-center justify-center shadow-xl">
-                      <span className="text-8xl">👩‍🎨</span>
-                    </div>
-                    <p className="text-gray-700 font-medium text-lg">Mathilde, créateur et maman de 5 enfants</p>
+                <Image
+                  src="/images/mathilde-atelier.jpg"
+                  alt="Mathilde dans son atelier de couture à Trois Bassins, travaillant sur une création Eudora Couture"
+                  width={600}
+                  height={600}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+                {/* Overlay avec nom */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <p className="text-white font-medium text-lg shadow-lg">
+                      Mathilde dans son atelier à Trois Bassins
+                    </p>
+                    <p className="text-white/80 text-sm">
+                      Créateur et maman de 5 enfants
+                    </p>
                   </div>
                 </div>
                 {/* Decorative elements */}
@@ -163,18 +175,22 @@ export default function AProposPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Image placeholder */}
+            {/* Photo de l'atelier */}
             <div className="relative fade-in">
               <div className="aspect-[4/3] bg-gradient-to-br from-turquoise/10 to-coral/10 rounded-3xl relative overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center space-y-6">
-                    <div className="w-32 h-32 mx-auto bg-white/80 rounded-full flex items-center justify-center shadow-xl">
-                      <span className="text-6xl">🏠</span>
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-display font-bold mb-2">Notre Atelier</h3>
-                      <p className="text-gray-600">Trois Bassins, La Réunion</p>
-                    </div>
+                <Image
+                  src="/images/mathilde-atelier.jpg"
+                  alt="L'atelier Eudora Couture à Trois Bassins - Machine à coudre Janome et créations en cours"
+                  width={800}
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
+                {/* Overlay avec informations */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h3 className="text-white text-2xl font-display font-bold mb-2">Notre Atelier</h3>
+                    <p className="text-white/90 text-lg">Trois Bassins, La Réunion</p>
+                    <p className="text-white/70 text-sm mt-2">Où naissent nos créations artisanales</p>
                   </div>
                 </div>
                 {/* Decorative elements */}
