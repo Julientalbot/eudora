@@ -75,11 +75,11 @@ const Hero: React.FC<HeroProps> = ({
             <div className="flex items-center gap-8 pt-8 slide-up" style={{ animationDelay: '0.8s' }}>
               <div className="flex items-center gap-2">
                 <span className="text-2xl">🌺</span>
-                <span className="text-sm text-gray-600">Fait main à La Réunion</span>
+                <span className="text-sm text-gray-600">Haute Couture à La Réunion</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-2xl">✨</span>
-                <span className="text-sm text-gray-600">Personnalisable</span>
+                <span className="text-sm text-gray-600">Pièces d'exception</span>
               </div>
             </div>
           </div>

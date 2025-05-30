@@ -43,8 +43,8 @@ export default function ContactPage() {
               Restons en <span className="gradient-text">contact</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Une question, une commande spéciale ou simplement envie de dire bonjour ? 
-              Nous adorons avoir de vos nouvelles !
+              Une demande exclusive, un projet sur-mesure ou un rendez-vous privé ? 
+              Nous serions ravis de vous accompagner dans vos projets d'exception.
             </p>
           </div>
         </div>

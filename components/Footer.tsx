@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Instagram, Facebook, Mail, Phone, MapPin, Heart } from 'lucide-react'
 
 const Footer: React.FC = () => {
@@ -24,17 +25,31 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* About Section */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-3xl">🌺</span>
-              <h3 className="text-2xl font-display font-bold gradient-text">Ti Bébé Péi</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-coral to-turquoise rounded-lg blur-lg opacity-30"></div>
+                <div className="relative bg-white/10 rounded-lg p-2">
+                  <Image 
+                    src="/logo.png" 
+                    alt="Eudora Couture" 
+                    width={40} 
+                    height={40} 
+                    className="w-10 h-10 object-contain brightness-0 invert"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-display font-bold gradient-text">Eudora Couture</h3>
+                <p className="text-xs text-gray-400 tracking-wider uppercase">Haute Couture</p>
+              </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Créations artisanales pour bébés et mamans, confectionnées avec amour à La Réunion. 
-              Chaque pièce est unique et personnalisable.
+              Créations haute couture pour bébés et mamans d\'exception. 
+              Chaque pièce est une œuvre unique, façonnée avec passion à La Réunion.
             </p>
             <div className="flex gap-4 pt-4">
               <a 
-                href="https://instagram.com/tibebepei" 
+                href="https://instagram.com/eudoracouture" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-coral transition-colors duration-300 group"
@@ -42,7 +57,7 @@ const Footer: React.FC = () => {
                 <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a 
-                href="https://facebook.com/tibebepei" 
+                href="https://facebook.com/eudoracouture" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-turquoise transition-colors duration-300 group"
@@ -82,7 +97,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-coral mt-0.5" />
-                <span className="text-gray-300">contact@tibebepei.re</span>
+                <span className="text-gray-300">contact@eudoracouture.re</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-turquoise mt-0.5" />
@@ -121,7 +136,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm flex items-center gap-2">
-              © {currentYear} Ti Bébé Péi. Fait avec 
+              © {currentYear} Eudora Couture. Conçu avec 
               <Heart className="w-4 h-4 text-coral fill-coral" />
               à La Réunion
             </p>

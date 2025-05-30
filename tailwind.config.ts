@@ -9,11 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        coral: "#FF6B6B",
+        coral: "#E8B4B4",
         turquoise: "#4ECDC4",
         "tropical-green": "#95E1D3", 
         sand: "#F5F3F0",
         cream: "#FEFEFE",
+        "gold": "#D4AF37",
+        "charcoal": "#2C2C2C",
       },
       fontFamily: {
         'display': ['Playfair Display', 'serif'],

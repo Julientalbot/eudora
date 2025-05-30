@@ -20,7 +20,7 @@ export default function AProposPage() {
               Notre <span className="gradient-text">histoire</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Une passion née de l'amour maternel, nourrie par les couleurs et la douceur de vivre de La Réunion.
+              L'excellence artisanale au service de l'amour maternel, sublimée par l'élégance tropicale de La Réunion.
             </p>
           </div>
         </div>
@@ -44,17 +44,17 @@ export default function AProposPage() {
               </h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Bonjour, je suis {shopInfo.owner}, créatrice de Ti Bébé Péi. Maman de deux merveilleux enfants, 
-                  j'ai découvert ma passion pour la couture lors de ma première grossesse.
+                  Bonjour, je suis {shopInfo.owner}, fondatrice d'Eudora Couture. Maman de deux merveilleux enfants, 
+                  j'ai découvert ma passion pour la haute couture enfantine lors de ma première grossesse.
                 </p>
                 <p>
-                  Ce qui a commencé comme un hobby pour créer des pièces uniques pour mon bébé s'est 
-                  transformé en une véritable vocation. Inspirée par la beauté de La Réunion et 
-                  touchée par l'entraide entre mamans de l'île, j'ai décidé de partager cette passion.
+                  Ce qui a commencé comme une quête de perfection pour habiller mon bébé s'est 
+                  transformé en une mission d'excellence. Inspirée par la beauté raffinée de La Réunion et 
+                  guidée par une exigence de qualité absolue, j'ai créé Eudora Couture.
                 </p>
                 <p>
-                  Aujourd'hui, chaque création porte en elle un peu de l'âme tropicale de notre île, 
-                  confectionnée avec amour dans mon atelier à Saint-Denis pour accompagner vos 
+                  Aujourd'hui, chaque pièce est une œuvre d'art qui capture l'essence luxueuse de notre île, 
+                  méticuleusement façonnée dans notre atelier d'exception à Saint-Denis pour sublimer vos 
                   moments les plus précieux.
                 </p>
               </div>
@@ -68,7 +68,7 @@ export default function AProposPage() {
                     <div className="w-40 h-40 mx-auto bg-white/80 rounded-full flex items-center justify-center shadow-xl">
                       <span className="text-8xl">👩‍🎨</span>
                     </div>
-                    <p className="text-gray-700 font-medium text-lg">Marie, créatrice passionnée</p>
+                    <p className="text-gray-700 font-medium text-lg">Marie, créatrice haute couture</p>
                   </div>
                 </div>
                 {/* Decorative elements */}
@@ -99,14 +99,14 @@ export default function AProposPage() {
             {[
               {
                 icon: '🌺',
-                title: 'Artisanat Local',
-                description: 'Chaque pièce est confectionnée à la main dans notre atelier à La Réunion, en petites séries pour garantir une qualité exceptionnelle.',
+                title: 'Excellence Artisanale',
+                description: 'Chaque création est une pièce unique, réalisée à la main dans notre atelier d\'exception à La Réunion avec une précision inégalée.',
                 color: 'coral'
               },
               {
                 icon: '🌿',
-                title: 'Matériaux Naturels',
-                description: 'Nous privilégions les tissus biologiques et naturels, doux pour la peau de bébé et respectueux de l\'environnement.',
+                title: 'Étoffes Nobles',
+                description: 'Nous sélectionnons exclusivement des tissus de prestige certifiés biologiques, d\'une douceur incomparable et d\'une qualité irréprochable.',
                 color: 'tropical-green'
               },
               {
@@ -117,14 +117,14 @@ export default function AProposPage() {
               },
               {
                 icon: '💚',
-                title: 'Éco-responsabilité',
-                description: 'Nous réduisons notre impact en utilisant des chutes de tissus, des emballages recyclables et en favorisant les circuits courts.',
+                title: 'Luxe Responsable',
+                description: 'Notre engagement pour l\'excellence s\'accompagne d\'une approche éthique : emballages luxueux recyclables et approvisionnement local.',
                 color: 'tropical-green'
               },
               {
                 icon: '🤝',
-                title: 'Entraide Familiale',
-                description: 'Notre petit atelier familial privilégie l\'humain et l\'échange, pour créer ensemble des souvenirs qui durent.',
+                title: 'Service d\'Exception',
+                description: 'Notre atelier haute couture offre une expérience personnalisée exclusive, créant des pièces d\'héritage pour les générations futures.',
                 color: 'coral'
               },
               {
@@ -190,19 +190,19 @@ export default function AProposPage() {
               </h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Notre petit atelier situé à Saint-Denis est le cœur battant de Ti Bébé Péi. 
-                  C'est ici que naissent toutes nos créations, dans une ambiance chaleureuse 
-                  et familiale.
+                  Notre atelier d'exception situé à Saint-Denis est le sanctuaire d'Eudora Couture. 
+                  C'est ici que prennent vie nos créations haute couture, dans un environnement 
+                  alliant tradition artisanale et excellence contemporaine.
                 </p>
                 <p>
-                  Chaque matin, je prépare mes tissus avec soin, sélectionnés pour leur 
-                  douceur et leur qualité. L'atelier résonne du ronronnement de ma machine 
-                  à coudre et parfois des rires de mes enfants qui m'accompagnent.
+                  Chaque matin, je choisis méticuleusement les étoffes nobles, importées des 
+                  meilleures maisons européennes. L'atelier vibre au rythme précis de nos 
+                  machines professionnelles et de l'expertise artisanale raffinée.
                 </p>
                 <p>
-                  C'est aussi un lieu d'échange où les futures mamans viennent découvrir 
-                  nos créations et partager leurs envies. Car derrière chaque commande, 
-                  il y a une histoire unique que nous prenons plaisir à connaître.
+                  C'est également un espace d'exception où notre clientèle exclusive vient 
+                  découvrir nos collections et concevoir leurs rêves. Car derrière chaque 
+                  création haute couture, il y a une histoire unique que nous sublimmons.
                 </p>
               </div>
               
@@ -228,7 +228,7 @@ export default function AProposPage() {
               Notre <span className="gradient-text">parcours</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Les étapes clés qui ont façonné Ti Bébé Péi
+              Les étapes clés qui ont façonné Eudora Couture
             </p>
           </div>
           
@@ -248,20 +248,20 @@ export default function AProposPage() {
               },
               {
                 year: '2022',
-                title: 'Naissance de Ti Bébé Péi',
-                description: 'Création officielle de la marque et installation de l\'atelier à Saint-Denis.',
+                title: 'Naissance d\'Eudora Couture',
+                description: 'Création officielle de la maison de haute couture et inauguration de l\'atelier d\'exception à Saint-Denis.',
                 icon: '🌺'
               },
               {
                 year: '2023',
                 title: 'Reconnaissance locale',
-                description: 'Participation aux marchés artisanaux et développement du bouche-à-oreille sur l\'île.',
+                description: 'Reconnaissance par une clientèle prestigieuse et développement d\'une réputation d\'excellence sur l\'île.',
                 icon: '🏝️'
               },
               {
                 year: '2024',
                 title: 'Expansion digitale',
-                description: 'Lancement du site web pour partager nos créations au-delà de La Réunion.',
+                description: 'Lancement de notre boutique en ligne exclusive pour offrir l\'excellence d\'Eudora Couture au-delà de La Réunion.',
                 icon: '✨'
               }
             ].map((item, index) => (

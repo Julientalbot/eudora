@@ -42,8 +42,8 @@ export default function SurMesurePage() {
               Créations <span className="gradient-text">Sur Mesure</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Imaginez la création de vos rêves, nous la réalisons avec passion. 
-              Chaque détail compte pour créer une pièce unique qui vous ressemble.
+              Confiez-nous vos rêves les plus exclusifs, nous les transformons en réalité haute couture. 
+              Chaque détail est méticuleusement travaillé pour créer une pièce d'exception qui vous sublime.
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function SurMesurePage() {
               Comment ça <span className="gradient-text">marche</span> ?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Un processus simple et personnalisé pour créer votre pièce unique
+              Un processus d'excellence personnalisé pour créer votre pièce haute couture
             </p>
           </div>
           
@@ -72,29 +72,29 @@ export default function SurMesurePage() {
             {[
               {
                 step: '1',
-                title: 'Votre idée',
-                description: 'Décrivez-nous votre projet et vos envies',
+                title: 'Votre vision',
+                description: 'Partagez-nous vos rêves et aspirations les plus exclusifs',
                 icon: '💭',
                 color: 'coral'
               },
               {
                 step: '2',
-                title: 'Devis gratuit',
-                description: 'Recevez une proposition détaillée sous 48h',
+                title: 'Consultation exclusive',
+                description: 'Recevez une proposition haute couture personnalisée',
                 icon: '📋',
                 color: 'turquoise'
               },
               {
                 step: '3',
-                title: 'Création',
-                description: 'Confection artisanale dans notre atelier',
+                title: 'Confection d\'exception',
+                description: 'Réalisation méticuleuse dans notre atelier haute couture',
                 icon: '✂️',
                 color: 'tropical-green'
               },
               {
                 step: '4',
-                title: 'Livraison',
-                description: 'Recevez votre création unique chez vous',
+                title: 'Livraison prestige',
+                description: 'Réception de votre pièce d\'exception en mains propres',
                 icon: '📦',
                 color: 'coral'
               }

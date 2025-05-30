@@ -19,30 +19,30 @@ export interface ShopInfo {
 export const categories: Category[] = [
   {
     id: '1',
-    name: 'Sacs à langer',
-    slug: 'sacs-a-langer',
-    description: 'Des sacs pratiques et élégants pour toutes vos sorties avec bébé',
+    name: 'Sacs Couture',
+    slug: 'sacs-couture',
+    description: 'Sacs de luxe alliant élégance et fonctionnalité pour accompagner vos sorties',
     image: '/images/sac-langer.jpg'
   },
   {
     id: '2',
-    name: 'Capes de bain',
-    slug: 'capes-de-bain',
-    description: 'Douces et absorbantes, parfaites pour les moments câlins après le bain',
+    name: 'Capes de Bain Prestige',
+    slug: 'capes-prestige',
+    description: 'Enveloppements luxueux en tissus nobles pour des moments de tendresse d\'exception',
     image: '/images/cape-bain.jpg'
   },
   {
     id: '3',
-    name: 'Trousses',
-    slug: 'trousses',
-    description: 'Pour ranger les petites affaires de bébé avec style',
+    name: 'Pochettes Raffinées',
+    slug: 'pochettes-raffinees',
+    description: 'Accessoires élégants pour organiser les essentiels avec sophistication',
     image: '/images/trousse.jpg'
   },
   {
     id: '4',
-    name: 'Lingettes lavables',
-    slug: 'lingettes',
-    description: 'Écologiques et douces pour la peau de bébé',
+    name: 'Collection Soins Deluxe',
+    slug: 'soins-deluxe',
+    description: 'Lingettes lavables en fibres nobles pour une douceur inégalée',
     image: '/images/lingettes.jpg'
   }
 ];
@@ -50,9 +50,9 @@ export const categories: Category[] = [
 export const featuredProducts: Product[] = [
   {
     id: '1',
-    name: 'Sac à langer Hibiscus',
-    description: 'Grand sac à langer avec motifs d\'hibiscus, parfait pour les sorties tropicales',
-    price: 89,
+    name: 'Sac Couture Hibiscus',
+    description: 'Sac à langer de luxe en lin français brodé à la main, motifs d\'hibiscus délicatement ourlés',
+    price: 189,
     category: 'Sacs à langer',
     images: ['/images/sac-hibiscus.jpg'],
     customizable: true,
@@ -63,9 +63,9 @@ export const featuredProducts: Product[] = [
   },
   {
     id: '2',
-    name: 'Cape de bain Coco',
-    description: 'Cape de bain douce avec capuche et broderie palmier',
-    price: 45,
+    name: 'Cape de Bain Royale',
+    description: 'Cape en éponge de bambou premium avec capuche et broderie palmier dorée',
+    price: 95,
     category: 'Capes de bain',
     images: ['/images/cape-coco.jpg'],
     customizable: true,
@@ -75,9 +75,9 @@ export const featuredProducts: Product[] = [
   },
   {
     id: '3',
-    name: 'Trousse Vanille',
-    description: 'Trousse multi-usage aux couleurs de l\'île, idéale pour les petites affaires',
-    price: 25,
+    name: 'Pochette Vanille Bourbon',
+    description: 'Pochette de toilette en soie sauvage teintée naturellement, finitions main',
+    price: 75,
     category: 'Trousses',
     images: ['/images/trousse-vanille.jpg'],
     customizable: true,
@@ -87,9 +87,9 @@ export const featuredProducts: Product[] = [
   },
   {
     id: '4',
-    name: 'Lot de lingettes Tropical',
-    description: 'Set de 10 lingettes lavables avec pochette de transport',
-    price: 35,
+    name: 'Collection Lingettes Prestige',
+    description: 'Coffret de 10 lingettes en coton biologique certifié avec étui en cuir végétal',
+    price: 85,
     category: 'Lingettes lavables',
     images: ['/images/lingettes-tropical.jpg'],
     customizable: false,
@@ -101,17 +101,17 @@ export const featuredProducts: Product[] = [
 ];
 
 export const shopInfo: ShopInfo = {
-  name: 'Ti Bébé Péi',
-  tagline: 'Créations artisanales pour bébés et mamans, inspirées de La Réunion',
-  description: 'Chaque création est confectionnée avec amour dans mon atelier à Saint-Denis. Des tissus choisis avec soin, des finitions soignées, pour accompagner les moments précieux de votre famille.',
+  name: 'Eudora Couture',
+  tagline: 'Créations haute couture pour bébés et mamans',
+  description: 'Chaque création est une œuvre unique, confectionnée avec une attention méticuleuse aux détails dans notre atelier d\'exception à Saint-Denis. Nous sélectionnons les tissus les plus nobles et les finitions les plus raffinées pour sublimer les moments précieux de votre famille.',
   location: 'La Réunion',
-  shipping: 'Livraison gratuite à partir de 80€ à La Réunion',
-  customOrder: 'Toutes nos créations sont personnalisables selon vos envies',
+  shipping: 'Livraison offerte et personnalisée à La Réunion',
+  customOrder: 'Créations sur-mesure pour répondre à vos désirs les plus exclusifs',
   owner: 'Marie',
-  email: 'contact@tibebepei.re',
+  email: 'contact@eudoracouture.re',
   phone: '+262 692 12 34 56',
   social: {
-    instagram: 'https://instagram.com/tibebepei',
-    facebook: 'https://facebook.com/tibebepei'
+    instagram: 'https://instagram.com/eudoracouture',
+    facebook: 'https://facebook.com/eudoracouture'
   }
 };

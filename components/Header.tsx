@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, ShoppingBag, Heart } from 'lucide-react'
 
 const Header: React.FC = () => {
@@ -31,16 +32,28 @@ const Header: React.FC = () => {
       <nav className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
+          <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-coral to-turquoise rounded-full blur-lg opacity-50 group-hover:opacity-75 transition-opacity"></div>
-              <div className="relative bg-white rounded-full p-2">
-                <span className="text-2xl">🌺</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-coral to-turquoise rounded-lg blur-lg opacity-30 group-hover:opacity-50 transition-opacity"></div>
+              <div className="relative bg-white rounded-lg p-1">
+                <Image 
+                  src="/logo.png" 
+                  alt="Eudora Couture" 
+                  width={48} 
+                  height={48} 
+                  className="w-12 h-12 object-contain"
+                  priority
+                />
               </div>
             </div>
-            <span className="text-2xl font-display font-bold bg-gradient-to-r from-coral to-turquoise bg-clip-text text-transparent">
-              Ti Bébé Péi
-            </span>
+            <div className="flex flex-col">
+              <span className="text-2xl font-display font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                Eudora Couture
+              </span>
+              <span className="text-xs text-gray-500 tracking-wider uppercase">
+                Haute Couture
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

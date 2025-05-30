@@ -8,7 +8,7 @@ export default function Home() {
     <div className="pt-20">
       {/* Hero Section */}
       <Hero
-        title="Ti Bébé Péi"
+        title="Eudora Couture"
         subtitle={shopInfo.tagline}
         description={shopInfo.description}
         primaryCTA={{ label: "Découvrir les créations", href: "#creations" }}
@@ -27,8 +27,8 @@ export default function Home() {
               Nos <span className="gradient-text">Créations</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Chaque pièce est confectionnée avec soin dans notre atelier à La Réunion, 
-              avec des tissus sélectionnés pour leur qualité et leur douceur.
+              Chaque création est une œuvre d'art unique, façonnée dans notre atelier d'exception à La Réunion, 
+              avec des étoffes nobles sélectionnées pour leur qualité supérieure et leur raffinement.
             </p>
           </div>
           
@@ -77,7 +77,7 @@ export default function Home() {
               Produits <span className="gradient-text">Phares</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Nos créations les plus appréciées par les mamans de l'île
+              Nos pièces d'exception prisées par une clientèle exigeante
             </p>
           </div>
           
@@ -142,20 +142,20 @@ export default function Home() {
               {
                 icon: '🌺',
                 color: 'coral',
-                title: 'Fait Main avec Amour',
-                description: 'Chaque création est unique, réalisée avec passion dans notre atelier familial'
+                title: 'Artisanat d\'Excellence',
+                description: 'Chaque pièce est une œuvre unique, conçue avec une expertise artisanale d\'exception'
               },
               {
                 icon: '🌿',
                 color: 'turquoise',
-                title: 'Éco-responsable',
-                description: 'Tissus naturels, production locale et emballages recyclables'
+                title: 'Luxe Durable',
+                description: 'Étoffes nobles et naturelles, production éthique et emballages d\'exception recyclables'
               },
               {
                 icon: '🏝️',
                 color: 'tropical-green',
-                title: 'Inspiré de La Réunion',
-                description: 'Des créations qui célèbrent la beauté et la douceur de vivre tropicale'
+                title: 'Essence de La Réunion',
+                description: 'Des créations exclusives qui subliment l\'art de vivre tropical avec élégance'
               }
             ].map((value, index) => (
               <div key={index} className="text-center group fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
