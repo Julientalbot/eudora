@@ -69,7 +69,7 @@ export default function AProposPage() {
                     <div className="w-40 h-40 mx-auto bg-white/80 rounded-full flex items-center justify-center shadow-xl">
                       <span className="text-8xl">👩‍🎨</span>
                     </div>
-                    <p className="text-gray-700 font-medium text-lg">Mathilde, créatrice et maman de 5 enfants</p>
+                    <p className="text-gray-700 font-medium text-lg">Mathilde, créateur et maman de 5 enfants</p>
                   </div>
                 </div>
                 {/* Decorative elements */}
@@ -196,14 +196,14 @@ export default function AProposPage() {
                   alliant tradition artisanale et excellence contemporaine.
                 </p>
                 <p>
-                  Chaque matin, je choisis méticuleusement les étoffes nobles, importées des 
+                  Chaque matin, je choisis avec soin les étoffes nobles, importées des 
                   meilleures maisons européennes. L'atelier vibre au rythme précis de nos 
                   machines professionnelles et de l'expertise artisanale raffinée.
                 </p>
                 <p>
                   C'est également un espace d'exception où notre clientèle exclusive vient 
                   découvrir nos collections et concevoir leurs rêves. Car derrière chaque 
-                  création haute couture, il y a une histoire unique que nous sublimmons.
+                  création haute couture, il y a une histoire unique que nous sublimeons.
                 </p>
               </div>
               

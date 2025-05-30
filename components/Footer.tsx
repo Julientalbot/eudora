@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Créations haute couture pour bébés et mamans d\'exception. 
+              Créations haute couture pour bébés d\'exception. 
               Chaque pièce est une œuvre unique, façonnée avec passion à La Réunion.
             </p>
             <div className="flex gap-4 pt-4">
