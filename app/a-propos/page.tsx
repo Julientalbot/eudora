@@ -44,18 +44,19 @@ export default function AProposPage() {
               </h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Bonjour, je suis {shopInfo.owner}, fondatrice d'Eudora Couture. Maman de deux merveilleux enfants, 
-                  j'ai découvert ma passion pour la haute couture enfantine lors de ma première grossesse.
+                  Bonjour, je suis {shopInfo.owner}, fondatrice d'Eudora Couture. Maman de cinq magnifiques enfants 
+                  - Louis, François, Antoine, Jeanne et Eléonore ma petite dernière - j'ai découvert ma passion 
+                  pour la couture lors de ma première grossesse.
                 </p>
                 <p>
-                  Ce qui a commencé comme une quête de perfection pour habiller mon bébé s'est 
-                  transformé en une mission d'excellence. Inspirée par la beauté raffinée de La Réunion et 
-                  guidée par une exigence de qualité absolue, j'ai créé Eudora Couture.
+                  Ce qui a commencé par quelques points d'aiguille pendant ma grossesse de Louis s'est enrichi 
+                  à chaque nouvelle grossesse. Avec François, Antoine, Jeanne et enfin Eléonore, ma technique 
+                  s'est affinée jusqu'à devenir une véritable activité à part entière.
                 </p>
                 <p>
-                  Aujourd'hui, chaque pièce est une œuvre d'art qui capture l'essence luxueuse de notre île, 
-                  méticuleusement façonnée dans notre atelier d'exception à Saint-Denis pour sublimer vos 
-                  moments les plus précieux.
+                  Aujourd'hui, forte de cette expérience de maman créatrice, chaque pièce Eudora Couture 
+                  porte en elle l'amour maternel et l'excellence artisanale, méticuleusement façonnée 
+                  dans notre atelier à Saint-Denis pour sublimer vos moments les plus précieux.
                 </p>
               </div>
             </div>
@@ -68,7 +69,7 @@ export default function AProposPage() {
                     <div className="w-40 h-40 mx-auto bg-white/80 rounded-full flex items-center justify-center shadow-xl">
                       <span className="text-8xl">👩‍🎨</span>
                     </div>
-                    <p className="text-gray-700 font-medium text-lg">Marie, créatrice haute couture</p>
+                    <p className="text-gray-700 font-medium text-lg">Mathilde, créatrice et maman de 5 enfants</p>
                   </div>
                 </div>
                 {/* Decorative elements */}
@@ -235,15 +236,15 @@ export default function AProposPage() {
           <div className="space-y-12 fade-in">
             {[
               {
-                year: '2020',
-                title: 'Les premiers points',
-                description: 'Découverte de la couture pendant ma première grossesse. Première cape de bain pour mon bébé.',
+                year: '2018',
+                title: 'Les premiers points avec Louis',
+                description: 'Découverte de la couture pendant ma première grossesse. Premières créations pour Louis.',
                 icon: '🧵'
               },
               {
-                year: '2021',
-                title: 'Partage entre mamans',
-                description: 'Mes amies mamans adorent mes créations. Premières commandes pour leur entourage.',
+                year: '2019-2023',
+                title: 'Évolution avec chaque enfant',
+                description: 'François, Antoine, Jeanne et Eléonore : chaque grossesse enrichit ma technique et ma créativité.',
                 icon: '👶'
               },
               {

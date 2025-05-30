@@ -18,7 +18,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({
   title = "Créations Artisanales Tropicales",
   subtitle = "Bienvenue chez Eudora",
-  description = "Découvrez nos créations uniques inspirées par la beauté et les couleurs vibrantes des tropiques. Chaque pièce est fabriquée à la main avec passion et savoir-faire.",
+  description = "L'histoire d'une maman de 5 enfants qui a transformé sa passion de la couture en atelier d'exception. De Louis à Eléonore, chaque grossesse a enrichi mon savoir-faire.",
   primaryCTA = { label: "Découvrir nos créations", href: "/creations" },
   secondaryCTA = { label: "Sur mesure", href: "/sur-mesure" },
 }) => {
@@ -75,7 +75,7 @@ const Hero: React.FC<HeroProps> = ({
             <div className="flex items-center gap-8 pt-8 slide-up" style={{ animationDelay: '0.8s' }}>
               <div className="flex items-center gap-2">
                 <span className="text-2xl">🌺</span>
-                <span className="text-sm text-gray-600">Haute Couture à La Réunion</span>
+                <span className="text-sm text-gray-600">Mathilde, maman créatrice</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-2xl">✨</span>

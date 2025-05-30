@@ -115,7 +115,7 @@ export const shopInfo: ShopInfo = {
   location: 'La Réunion',
   shipping: 'Livraison gratuite à partir de 80€ à La Réunion',
   customOrder: 'Toutes nos créations sont personnalisables selon vos inspirations les plus raffinées',
-  owner: 'Marie',
+  owner: 'Mathilde',
   email: 'contact@eudoracouture.re',
   phone: '+262 692 12 34 56',
   social: {
