@@ -1,153 +1,209 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Instagram, Facebook, Mail, Phone, MapPin, Heart } from 'lucide-react'
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
-  
+
+  const navigation = [
+    { name: 'Accueil', href: '/' },
+    { name: 'Galerie', href: '/galerie' },
+    { name: 'Sur Mesure', href: '/sur-mesure' },
+    { name: 'Notre Histoire', href: '/a-propos' },
+    { name: 'Contact', href: '/contact' },
+  ]
+
   return (
-    <footer className="relative bg-gradient-to-b from-gray-900 to-black text-white overflow-hidden">
-      {/* Background decoration */}
+    <footer className="relative bg-charcoal text-white overflow-hidden">
+      {/* Background decorations */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-coral/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-turquoise/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-coral/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-turquoise/5 rounded-full blur-3xl" />
       </div>
-      
-      {/* Top wave decoration */}
+
+      {/* Wave decoration */}
       <div className="absolute top-0 left-0 right-0">
-        <svg className="w-full h-24 fill-sand" viewBox="0 0 1440 100" preserveAspectRatio="none">
-          <path d="M0,60 C150,20 350,80 600,40 C850,0 1050,60 1200,30 C1350,0 1390,20 1440,40 L1440,0 L0,0 Z"></path>
+        <svg className="w-full h-24" viewBox="0 0 1440 96" preserveAspectRatio="none">
+          <path
+            d="M0,64 C360,96 720,32 1080,64 C1260,80 1380,48 1440,32 L1440,0 L0,0 Z"
+            fill="#F4F1DE"
+          />
         </svg>
       </div>
-      
-      <div className="container mx-auto px-4 pt-32 pb-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* About Section */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-coral to-turquoise rounded-lg blur-lg opacity-30"></div>
-                <div className="relative bg-white/10 rounded-lg p-2">
-                  <Image 
-                    src="/logo.png" 
-                    alt="Eudora Couture" 
-                    width={40} 
-                    height={40} 
-                    className="w-10 h-10 object-contain brightness-0 invert"
-                  />
-                </div>
+
+      <div className="container mx-auto px-6 lg:px-12 pt-32 pb-12 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <Link href="/" className="group inline-flex items-center gap-4 mb-6">
+              <div className="relative w-12 h-12 bg-white/10 rounded-xl overflow-hidden flex items-center justify-center group-hover:bg-white/20 transition-colors duration-300">
+                <Image
+                  src="/logo.png"
+                  alt="Eudora Couture"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 object-contain brightness-0 invert"
+                />
               </div>
-              <div>
-                <h3 className="text-2xl font-display font-bold gradient-text">Eudora Couture</h3>
-                <p className="text-xs text-gray-400 tracking-wider uppercase">Artisanat de Luxe</p>
+              <div className="flex flex-col">
+                <span className="text-xl font-display font-semibold text-white">
+                  Eudora
+                </span>
+                <span className="text-[10px] font-body font-medium tracking-[0.25em] uppercase text-white/60">
+                  Couture
+                </span>
               </div>
-            </div>
-            <p className="text-gray-300 leading-relaxed">
-              Artisanat de luxe pour bébés d\'exception. 
-              Chaque pièce est une œuvre unique, façonnée avec passion à La Réunion.
+            </Link>
+
+            <p className="text-white/70 font-body text-sm leading-relaxed mb-6 max-w-xs">
+              Artisanat de luxe pour bébés d'exception.
+              Chaque pièce est une oeuvre unique, façonnée avec passion à La Réunion.
             </p>
-            <div className="flex gap-4 pt-4">
-              <a 
-                href="https://instagram.com/eudoracouture" 
-                target="_blank" 
+
+            {/* Social links */}
+            <div className="flex gap-3">
+              <a
+                href="https://instagram.com/eudoracouture"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-coral transition-colors duration-300 group"
+                aria-label="Instagram"
               >
-                <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
               </a>
-              <a 
-                href="https://facebook.com/eudoracouture" 
-                target="_blank" 
+              <a
+                href="https://facebook.com/eudoracouture"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-turquoise transition-colors duration-300 group"
+                aria-label="Facebook"
               >
-                <Facebook className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
               </a>
             </div>
           </div>
-          
-          {/* Quick Links */}
+
+          {/* Navigation */}
           <div>
-            <h4 className="text-xl font-display font-bold mb-6">Navigation</h4>
+            <h4 className="text-lg font-display font-semibold mb-6">Navigation</h4>
             <ul className="space-y-3">
-              {[
-                { name: 'Accueil', href: '/' },
-                { name: 'Nos Créations', href: '/#creations' },
-                { name: 'Sur Mesure', href: '/sur-mesure' },
-                { name: 'À Propos', href: '/a-propos' },
-                { name: 'Contact', href: '/contact' },
-              ].map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="text-gray-300 hover:text-coral transition-colors duration-300 inline-flex items-center gap-2 group"
+              {navigation.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-white/70 font-body text-sm hover:text-coral transition-colors duration-300 inline-flex items-center gap-2 group"
                   >
-                    <span className="w-0 h-0.5 bg-coral group-hover:w-4 transition-all duration-300"></span>
-                    {link.name}
+                    <span className="w-0 h-px bg-coral group-hover:w-3 transition-all duration-300" />
+                    {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          
-          {/* Contact Info */}
+
+          {/* Contact */}
           <div>
-            <h4 className="text-xl font-display font-bold mb-6">Contact</h4>
+            <h4 className="text-lg font-display font-semibold mb-6">Contact</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-coral mt-0.5" />
-                <span className="text-gray-300">contact@eudoracouture.re</span>
+                <div className="w-8 h-8 bg-coral/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg className="w-4 h-4 text-coral" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs text-white/50 font-body mb-1">Email</p>
+                  <a href="mailto:contact@eudoracouture.re" className="text-white/80 font-body text-sm hover:text-coral transition-colors">
+                    contact@eudoracouture.re
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-turquoise mt-0.5" />
-                <span className="text-gray-300">+262 692 12 34 56</span>
+                <div className="w-8 h-8 bg-turquoise/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg className="w-4 h-4 text-turquoise" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs text-white/50 font-body mb-1">Téléphone</p>
+                  <a href="tel:+262692123456" className="text-white/80 font-body text-sm hover:text-coral transition-colors">
+                    +262 692 12 34 56
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-tropical-green mt-0.5" />
-                <span className="text-gray-300">Trois Bassins, La Réunion</span>
+                <div className="w-8 h-8 bg-gold/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs text-white/50 font-body mb-1">Atelier</p>
+                  <p className="text-white/80 font-body text-sm">
+                    Trois Bassins, La Réunion
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
-          
+
           {/* Newsletter */}
           <div>
-            <h4 className="text-xl font-display font-bold mb-6">Newsletter</h4>
-            <p className="text-gray-300 mb-4">
-              Restez informé de nos nouveautés
+            <h4 className="text-lg font-display font-semibold mb-6">Newsletter</h4>
+            <p className="text-white/70 font-body text-sm mb-4">
+              Recevez nos nouveautés en avant-première
             </p>
             <form className="space-y-3">
               <input
                 type="email"
                 placeholder="Votre email"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:border-coral focus:bg-white/20 transition-all duration-300 placeholder-gray-400"
+                className="
+                  w-full px-4 py-3 bg-white/10 border border-white/10 rounded-xl
+                  text-white placeholder:text-white/40 font-body text-sm
+                  focus:outline-none focus:border-coral focus:bg-white/15
+                  transition-all duration-300
+                "
               />
               <button
                 type="submit"
-                className="w-full px-4 py-3 bg-gradient-to-r from-coral to-turquoise text-white rounded-lg hover:shadow-lg transition-all duration-300 font-medium"
+                className="
+                  w-full px-4 py-3 bg-coral text-white font-body font-semibold text-sm rounded-xl
+                  hover:bg-coral/90 transition-colors duration-300
+                  flex items-center justify-center gap-2
+                "
               >
                 S'inscrire
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
               </button>
             </form>
           </div>
         </div>
-        
-        {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8">
+
+        {/* Bottom bar */}
+        <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm flex items-center gap-2">
-              © {currentYear} Eudora Couture. Conçu avec 
-              <Heart className="w-4 h-4 text-coral fill-coral" />
+            <p className="text-white/50 text-sm font-body flex items-center gap-2">
+              © {currentYear} Eudora Couture. Fait avec
+              <svg className="w-4 h-4 text-coral" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
               à La Réunion
             </p>
             <div className="flex gap-6 text-sm">
-              <Link href="/mentions-legales" className="text-gray-400 hover:text-coral transition-colors">
+              <Link href="/mentions-legales" className="text-white/50 font-body hover:text-coral transition-colors">
                 Mentions légales
               </Link>
-              <Link href="/cgv" className="text-gray-400 hover:text-coral transition-colors">
+              <Link href="/cgv" className="text-white/50 font-body hover:text-coral transition-colors">
                 CGV
               </Link>
-              <Link href="/confidentialite" className="text-gray-400 hover:text-coral transition-colors">
+              <Link href="/confidentialite" className="text-white/50 font-body hover:text-coral transition-colors">
                 Confidentialité
               </Link>
             </div>

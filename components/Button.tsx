@@ -5,7 +5,7 @@ interface ButtonProps {
   children: React.ReactNode
   href?: string
   onClick?: () => void
-  variant?: 'primary' | 'secondary' | 'outline'
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost'
   size?: 'small' | 'medium' | 'large'
   disabled?: boolean
   fullWidth?: boolean
@@ -24,37 +24,61 @@ const Button: React.FC<ButtonProps> = ({
   type = 'button',
   className = '',
 }) => {
-  const baseClasses = 'relative inline-flex items-center justify-center font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden group'
-  
+  const baseClasses = `
+    relative inline-flex items-center justify-center font-body font-semibold
+    transition-all duration-400 ease-out
+    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-cream
+    disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
+    overflow-hidden group
+  `
+
   const variantClasses = {
-    primary: 'bg-gradient-to-r from-coral to-coral hover:from-coral hover:to-turquoise text-white shadow-md hover:shadow-lg focus:ring-coral',
-    secondary: 'bg-gradient-to-r from-turquoise to-turquoise hover:from-turquoise hover:to-tropical-green text-white shadow-md hover:shadow-lg focus:ring-turquoise',
-    outline: 'bg-transparent border-2 border-coral text-coral hover:bg-coral hover:text-white focus:ring-coral',
+    primary: `
+      bg-coral text-white
+      shadow-lg shadow-coral/20
+      hover:shadow-xl hover:shadow-coral/30 hover:-translate-y-0.5
+      focus:ring-coral
+    `,
+    secondary: `
+      bg-turquoise text-white
+      shadow-lg shadow-turquoise/20
+      hover:shadow-xl hover:shadow-turquoise/30 hover:-translate-y-0.5
+      focus:ring-turquoise
+    `,
+    outline: `
+      bg-transparent border-2 border-coral text-coral
+      hover:bg-coral hover:text-white hover:-translate-y-0.5
+      focus:ring-coral
+    `,
+    ghost: `
+      bg-transparent text-charcoal
+      hover:bg-charcoal/5 hover:text-coral
+      focus:ring-charcoal/20
+    `,
   }
-  
+
   const sizeClasses = {
-    small: 'px-4 py-2 text-sm rounded-lg',
-    medium: 'px-6 py-3 text-base rounded-xl',
-    large: 'px-8 py-4 text-lg rounded-2xl',
+    small: 'px-5 py-2 text-sm rounded-full gap-1.5',
+    medium: 'px-7 py-3 text-base rounded-full gap-2',
+    large: 'px-9 py-4 text-lg rounded-full gap-2.5',
   }
-  
+
   const widthClass = fullWidth ? 'w-full' : ''
-  
+
   const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${widthClass} ${className}`
-  
-  // Inner content with hover effect
+
   const innerContent = (
     <>
       <span className="relative z-10 flex items-center gap-2">
         {children}
       </span>
-      {/* Hover effect overlay */}
-      <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-      {/* Ripple effect */}
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700"></div>
+      {/* Shimmer effect on hover */}
+      {variant !== 'ghost' && (
+        <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 ease-out" />
+      )}
     </>
   )
-  
+
   if (href && !disabled) {
     return (
       <Link href={href} className={classes}>
@@ -62,7 +86,7 @@ const Button: React.FC<ButtonProps> = ({
       </Link>
     )
   }
-  
+
   return (
     <button
       type={type}
